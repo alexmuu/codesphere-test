@@ -1,0 +1,64 @@
+:root{
+    --accent-color: #7d47f7;
+    --text-opacity-low: .3;
+    --border-light: rgba(255, 255, 255, 0.053) solid 1px;
+}
+
+/* Custom Bootstrap Button Variant */
+.btn-purple-hover:hover{
+    background-color: var(--accent-color);;
+}
+
+.btn-purple{
+    background-color: var(--accent-color);;
+}
+
+.btn-purple:hover{
+    background-color: var(--accent-color);
+    opacity: .8;
+    transition: opacity .2s;
+}
+
+/* Dropdown Styling */
+.dropdown-toggle::after {
+    display: none !important; 
+  }
+
+.deleteDropdown{
+    background-color: transparent;
+    border: none;
+}
+
+body .btn-purple-hover{
+    color: white;
+}
+
+body .dropdown-delete{
+    opacity: 0.2;
+    transition: opacity .2s;
+}
+
+body .dropdown-delete:hover{
+    opacity: 1;
+    background-color: transparent;
+}
+
+body .dropdown-menu{
+    background-color: black;
+    border: var(--border-light);
+}
+
+/* Table Styling */
+.tableheading-small{
+    font-weight: 400;
+    opacity: var(--text-opacity-low);
+}
+
+.tablehead{
+    background-color: black;
+}
+
+.workspacetable td,th{
+    border-bottom: var(--border-light) !important;
+    border-top: transparent!important;
+}
